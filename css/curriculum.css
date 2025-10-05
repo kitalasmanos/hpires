@@ -1,8 +1,9 @@
 body {
     margin: 0;
-    font-family: 'Helvetica', sans-serif;
-    background-color: #f9f9f9;
+    font-family: 'Arial', sans-serif;
+    background-color: #e6f7ff;
     color: #333;
+    line-height: 1.5;
 }
 
 header {
@@ -28,56 +29,195 @@ nav a:hover {
     color: #f39c12;
 }
 
-.curriculum {
+.cv-container {
+    max-width: 900px;
+    margin: 2rem auto;
     padding: 2rem;
-    max-width: 800px;
-    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.curriculum h1 {
+.cv-name {
+    font-size: 3rem;
+    color: #1e90ff;
     text-align: center;
-    font-size: 2rem;
-    margin-bottom: 2rem;
-    color: #4a4a4a;
+    margin-bottom: 0.5rem;
 }
 
-.cv-section {
-    margin-bottom: 2rem;
-}
-
-.cv-section h2 {
+.cv-title {
     font-size: 1.5rem;
-    color: #4a4a4a;
-    border-bottom: 2px solid #f39c12;
+    text-align: center;
+    border-bottom: 2px solid #ccc;
     padding-bottom: 0.5rem;
     margin-bottom: 1rem;
 }
 
-.cv-item {
+.cv-description {
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto 2rem;
+    font-size: 1rem;
+}
+
+.cv-traits {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.trait {
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    font-weight: bold;
+    color: white;
+}
+
+.trabalho {
+    background-color: #ff4500;
+}
+
+.fidedigno {
+    background-color: #32cd32;
+}
+
+.bem-humorado {
+    background-color: #9370db;
+}
+
+.criativo {
+    background-color: #00bfff;
+}
+
+.cv-columns {
+    display: flex;
+    gap: 2rem;
+}
+
+.cv-left,
+.cv-right {
+    flex: 1;
+}
+
+.section-title {
+    font-size: 1.2rem;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.timeline {
+    position: relative;
+    padding-left: 2rem;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 1rem;
+    top: 0;
+    bottom: 0;
+    width: 2px;
+    background-color: #1e90ff;
+}
+
+.timeline-item {
+    position: relative;
     margin-bottom: 1.5rem;
 }
 
-.cv-item h3 {
-    font-size: 1.2rem;
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -1.2rem;
+    top: 0.5rem;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #1e90ff;
+}
+
+.year {
+    font-weight: bold;
+    font-size: 1.1rem;
+    color: #1e90ff;
+}
+
+.content p {
+    margin: 0.2rem 0;
+    background-color: #add8e6;
+    padding: 0.5rem;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.bubbles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.bubble {
+    padding: 0.5rem 1rem;
+    border-radius: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+.prototipagem {
+    background-color: #ffd700;
+}
+
+.programacao-sql {
+    background-color: #4169e1;
+}
+
+.programacao {
+    background-color: #228b22;
+}
+
+.acessibilidade {
+    background-color: #9932cc;
+}
+
+.skills .skill {
+    margin-bottom: 1rem;
+}
+
+.skill label {
+    display: block;
+    font-weight: bold;
+}
+
+.progress-bar {
+    background-color: #e0e0e0;
+    border-radius: 5px;
+    height: 10px;
+}
+
+.progress {
+    background-color: #1e90ff;
+    height: 100%;
+    border-radius: 5px;
+}
+
+.contact {
+    text-align: center;
+}
+
+.contact p {
     margin: 0.5rem 0;
+    font-size: 1rem;
 }
 
-.cv-item p {
-    margin: 0.3rem 0;
-}
-
-.cv-section ul {
-    list-style: disc;
-    padding-left: 1.5rem;
-}
-
-.cv-section a {
-    color: #4a4a4a;
-    text-decoration: none;
-}
-
-.cv-section a:hover {
-    text-decoration: underline;
+.cv-footer {
+    text-align: center;
+    margin-top: 2rem;
+    font-size: 0.8rem;
+    color: #666;
 }
 
 footer {

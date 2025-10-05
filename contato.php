@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio - Contato</title>
+  <link rel="stylesheet" href="css/contato.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.php">Início</a></li>
+        <li><a href="projetos.php">Projetos</a></li>
+        <li><a href="contato.php">Contato</a></li>
+        <li><a href="curriculum.php">C.V</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section class="contato">
+      <h1>Entre em Contato</h1>
+      <p>Email: seu.email@exemplo.com</p>
+      <p>LinkedIn: <a href="#">linkedin.com/in/seu-perfil</a></p>
+      <p>GitHub: <a href="#">github.com/seu-usuario</a></p>
+    </section>
+  </main>
+  <footer>
+    <p>&copy; 2025 Hugo Pires. Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
